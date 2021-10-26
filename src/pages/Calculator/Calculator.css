@@ -1,0 +1,33 @@
+.btn-row {
+  display: flex;
+}
+
+.wrap-calculator {
+  padding-top: 50px;
+  padding-left: 100px;
+}
+
+.wrap-calculator .title {
+  text-align: start;
+  padding: 1.5rem 0px;
+  font-size: 2.5rem;
+}
+
+.show-results {
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.show-results .input:focus {
+  outline: 0;
+}
+
+.main-calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  margin-left: -5px;
+}
+
+.btn-calculator:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,98 @@
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-2 {
+  width: 16.66666667%;
+  background-color: #a5a2a2;
+  height: 100vh;
+}
+
+.col-md-10 {
+  width: 83.33333333%;
+}
+
+.main .menu {
+  text-align: start;
+  margin-top: 35px;
+}
+
+.menu .active {
+  color: #000;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 40%) 2px 4px 10px;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  font-size: 24px;
+  color: #fff;
+  border-top: 1px solid #fff;
+  padding: 25px 10px;
+  transition: 0.3s;
+}
+.menu a.active{
+  font-size: 27px;
+}
+.menu a:hover {
+  color: #000;
+}
+
+.menu a:last-child {
+  border-bottom: 1px solid #fff;
+}
+
+.menu a svg {
+  margin-bottom: -3px;
+}
+.arrow{
+  display: inline-block;
+}
+.toggleMenu {
+  text-align: end;
+  font-size: 40px;
+  color: #fff;
+  margin-right: 23px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+.toggleMenu svg {
+  transition: 0.3s;
+}
+
+.toggleMenu svg:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.toggleHide {
+  margin-left: -235px;
+  transition: 0.3s;
+}
+
+.toggleShow {
+  margin-left: 0px;
+  transition: 0.3s;
+}
+
+.toggleHide .menu a {
+  text-align: end;
+  padding-right: 30px;
+}
+
+.toggleHide .toggleMenu svg {
+  color: #000;
+  transition: 0.3s;
+}
+
+.toggleHide .toggleMenu svg:hover {
+  color: #fff;
+}
