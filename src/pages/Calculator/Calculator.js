@@ -1,3 +1,4 @@
+/* eslint no-eval: 0 */
 import React, { useState } from "react";
 import Button from "../../components/Button/Button";
 import "./Calculator.css";
@@ -159,6 +160,7 @@ const Calculator = () => {
   const handleClickBtn = (e, type, operator) => {
     const value = e.target.value;
     const newInput = question.slice(0, -1) + operator;
+
     switch (type) {
       case "number": {
         if (value === "0") {
@@ -237,6 +239,7 @@ const Calculator = () => {
               return "/";
             }
           });
+
           const result = eval(replaceOperator);
           setAnswer(result);
         } else {
