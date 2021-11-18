@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Sidebar from "../../components/Sidebar/Sidebar";
 
 const DashboardLayout = ({ children }) => {
+  console.log("children", children);
   const [toggle, setToggle] = useState(true);
 
   const handleToggle = () => {

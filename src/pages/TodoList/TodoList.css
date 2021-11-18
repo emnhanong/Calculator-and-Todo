@@ -49,6 +49,8 @@
   outline: 0;
 }
 .todo .edit {
+  display: flex;
+  align-items: center;
   font-size: 20px;
   color: #007bff;
   transition: 0.3s;
@@ -62,6 +64,8 @@
   color: #fff;
 }
 .todo .trash {
+  display: flex;
+  align-items: center;
   color: #dc3545;
   font-size: 20px;
   transition: 0.3s;
@@ -95,4 +99,7 @@
 .input-change:disabled {
   border-color: none;
   box-shadow: none;
+}
+.content-todo {
+  width: 100%;
 }

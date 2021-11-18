@@ -260,7 +260,7 @@ const Calculator = () => {
 
   return (
     <div className="wrap-calculator">
-      <Title title={"My Calculator"} />
+      <Title title="My Calculator" />
       <Input value={question} style={inputQuestion} />
       <Input value={answer} style={inputAnswer} />
       <div className="main-calculator">

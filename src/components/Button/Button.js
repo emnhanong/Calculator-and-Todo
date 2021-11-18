@@ -11,7 +11,7 @@ const Button = (props) => {
         onClick={handleClickBtn}
         style={style}
       >
-        {props.name}
+        {name}
       </button>
     </>
   );

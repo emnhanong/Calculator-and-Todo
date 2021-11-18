@@ -9,13 +9,13 @@
 }
 
 .col-md-2 {
-  width: 16.66666667%;
+  width: 20%;
   background-color: #a5a2a2;
   height: 100vh;
 }
 
 .col-md-10 {
-  width: 83.33333333%;
+  width: 80%;
 }
 
 .main .menu {
@@ -59,7 +59,7 @@
   text-align: end;
   font-size: 40px;
   color: #fff;
-  margin-right: 23px;
+  margin-right: 27px;
   margin-bottom: 20px;
   margin-top: 25px;
 }
@@ -74,18 +74,21 @@
 }
 
 .toggleHide {
-  margin-left: -235px;
+  width: 7%;
   transition: 0.3s;
+}
+.toggleHide .toggleMenu {
+  text-align: center;
+  margin-right: 0px;
 }
 
 .toggleShow {
-  margin-left: 0px;
+  width: 20%;
   transition: 0.3s;
 }
 
 .toggleHide .menu a {
-  text-align: end;
-  padding-right: 30px;
+  text-align: center;
 }
 
 .toggleHide .toggleMenu svg {
@@ -95,4 +98,79 @@
 
 .toggleHide .toggleMenu svg:hover {
   color: #fff;
+}
+
+@media(max-width:1024px){
+  .col-md-2{
+    width: 100%;
+    height: auto;
+  }
+  .col-md-10{
+    width: 100%;
+    text-align: center;
+  }
+  .wrap-calculator{
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  .wrap-calculator .title{
+    text-align: center;
+  }
+  .wrap-todo .show-results input[type=text]{
+   width: -webkit-fill-available!important;
+   margin: 0px 30px;
+  }
+  .show-results input[type=text]{
+    margin: auto;
+    margin-bottom: -12px;
+  }
+  .show-results{
+    text-align: center;
+  }
+  .main-calculator{
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .wrap-todo{
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  .wrap-todo h1{
+    text-align: center;
+  }
+  .todo-list .todo{
+    margin: 0px 30px;
+    width: -webkit-fill-available;
+  }
+  .toggleMenu{
+    margin-right: 0px;
+    text-align: center;
+  }
+  .menu a{
+    text-align: center;
+  }
+  .bars{
+    display: inline-block;
+  }
+  .wrap-sidebar{
+    overflow: hidden;
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 10px;
+  }
+  .sidebar-mobile-hide{
+    transition: 0.3s;
+    margin-top: -171px;
+  }
+  .sidebar-mobile-show{
+    transition: 0.3s;
+    margin-top: 0px;
+  }
+  .menu a:last-child{
+    border-bottom: none;
+  }
+  .input-change{
+    width: -webkit-fill-available;
+  }
+}
+@media(max-width:800px){
+
 }

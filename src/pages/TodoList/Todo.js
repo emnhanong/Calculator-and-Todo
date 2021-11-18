@@ -31,12 +31,14 @@ const Todo = (props) => {
               />
             </form>
           ) : (
-            <p
-              onClick={() => handleCompleted(todo)}
-              style={todo.done ? line : hideLine}
-            >
-              {todo.title}
-            </p>
+            <div className="content-todo">
+              <p
+                onClick={() => handleCompleted(todo)}
+                style={todo.done ? line : hideLine}
+              >
+                {todo.title}
+              </p>
+            </div>
           )}
           <div className="wrap-btn">
             <Button
